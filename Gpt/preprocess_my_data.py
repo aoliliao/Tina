@@ -78,8 +78,6 @@ def parse_filename_correct(filename):
 
 
 
-
-
 def parse_filename_correct_cifar20(filename):
     parts = filename.split('_')
     model = parts[0]
@@ -126,7 +124,7 @@ def parse_filename_correct_cifar20(filename):
         "personalized_acc": personalized_acc
     }
 
-    # 转换成 JSON 字符串
+
     return result, last_number
 
 def list_files(directory, save_dir):
@@ -158,7 +156,7 @@ def list_files(directory, save_dir):
         json.dump(meta_data, f, ensure_ascii=False, indent=4)
 
 
-# 使用函数
+
 directory_path = './checkpoint_datasets/med/0328/conv5k_mom09_train_all/data/test'
 save_dir = './checkpoint_datasets/med/0328/conv5k_mom09_train_all/test'
 list_files(directory_path, save_dir)

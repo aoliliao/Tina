@@ -56,7 +56,7 @@ train:
   base_lr: 4e-4  #4e-4
   wd: 0.1
   num_ep: 400 #15000
-  mb_size: 64  #64  128 for76k
+  mb_size: 64  #64  
   checkpoint_freq: 100
 
 test:

@@ -3,10 +3,10 @@ rng_seed: 42
 num_gpus: 1
 out_dir: "./results"
 exp_name: tiny200_personalize20_0127_res1
-resume_path: "./results/tiny200_personalize20_0127_res/best.pt"
+resume_path:
 test_only: true
 debug_mode: false
-# "./results/tiny200_personalize20_0126_con5k/best.pt"
+
 dataset:
   name: tiny200_personalize20
   train_metric: avg_test_err
